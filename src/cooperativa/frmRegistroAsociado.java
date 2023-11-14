@@ -185,7 +185,7 @@ public class frmRegistroAsociado extends javax.swing.JInternalFrame {
                                 .addGap(24, 24, 24)
                                 .addComponent(jLabel2))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(46, 46, 46)
+                                .addGap(49, 49, 49)
                                 .addComponent(jLabel1)))
                         .addGap(44, 44, 44)
                         .addComponent(jLabel6)
