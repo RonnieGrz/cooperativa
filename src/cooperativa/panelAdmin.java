@@ -34,6 +34,8 @@ public class panelAdmin extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         btnActualizarAhorro = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
+        btnConsultarAsociado = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
         pnlPrincipal = new javax.swing.JDesktopPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -64,7 +66,7 @@ public class panelAdmin extends javax.swing.JFrame {
         btnRegistrarAsociadoLayout.setHorizontalGroup(
             btnRegistrarAsociadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnRegistrarAsociadoLayout.createSequentialGroup()
-                .addContainerGap(46, Short.MAX_VALUE)
+                .addContainerGap(62, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addGap(46, 46, 46))
         );
@@ -84,22 +86,49 @@ public class panelAdmin extends javax.swing.JFrame {
         });
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel4.setText("Ahorro");
+        jLabel4.setText("Actualizar ahorro");
 
         javax.swing.GroupLayout btnActualizarAhorroLayout = new javax.swing.GroupLayout(btnActualizarAhorro);
         btnActualizarAhorro.setLayout(btnActualizarAhorroLayout);
         btnActualizarAhorroLayout.setHorizontalGroup(
             btnActualizarAhorroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnActualizarAhorroLayout.createSequentialGroup()
-                .addGap(79, 79, 79)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnActualizarAhorroLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(55, 55, 55))
         );
         btnActualizarAhorroLayout.setVerticalGroup(
             btnActualizarAhorroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnActualizarAhorroLayout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnActualizarAhorroLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel4)
+                .addContainerGap())
+        );
+
+        btnConsultarAsociado.setBackground(new java.awt.Color(255, 255, 255));
+        btnConsultarAsociado.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnConsultarAsociadoMouseClicked(evt);
+            }
+        });
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel5.setText("Consultar Asociado");
+
+        javax.swing.GroupLayout btnConsultarAsociadoLayout = new javax.swing.GroupLayout(btnConsultarAsociado);
+        btnConsultarAsociado.setLayout(btnConsultarAsociadoLayout);
+        btnConsultarAsociadoLayout.setHorizontalGroup(
+            btnConsultarAsociadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnConsultarAsociadoLayout.createSequentialGroup()
+                .addContainerGap(58, Short.MAX_VALUE)
+                .addComponent(jLabel5)
+                .addGap(46, 46, 46))
+        );
+        btnConsultarAsociadoLayout.setVerticalGroup(
+            btnConsultarAsociadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnConsultarAsociadoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel5)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -113,7 +142,8 @@ public class panelAdmin extends javax.swing.JFrame {
                         .addGap(63, 63, 63)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(btnRegistrarAsociado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnActualizarAhorro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(btnActualizarAhorro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnConsultarAsociado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(73, 73, 73)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -130,9 +160,11 @@ public class panelAdmin extends javax.swing.JFrame {
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(83, 83, 83)
                 .addComponent(btnRegistrarAsociado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
+                .addGap(18, 18, 18)
+                .addComponent(btnConsultarAsociado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(btnActualizarAhorro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(154, Short.MAX_VALUE))
+                .addContainerGap(113, Short.MAX_VALUE))
         );
 
         pnlPrincipal.setBackground(new java.awt.Color(255, 255, 255));
@@ -141,7 +173,7 @@ public class panelAdmin extends javax.swing.JFrame {
         pnlPrincipal.setLayout(pnlPrincipalLayout);
         pnlPrincipalLayout.setHorizontalGroup(
             pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 545, Short.MAX_VALUE)
+            .addGap(0, 529, Short.MAX_VALUE)
         );
         pnlPrincipalLayout.setVerticalGroup(
             pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -196,6 +228,10 @@ public class panelAdmin extends javax.swing.JFrame {
         pnlPrincipal.add(frmAhorro).setVisible(true);
     }//GEN-LAST:event_btnActualizarAhorroMouseClicked
 
+    private void btnConsultarAsociadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnConsultarAsociadoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnConsultarAsociadoMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -235,11 +271,13 @@ public class panelAdmin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bgPanel;
     private javax.swing.JPanel btnActualizarAhorro;
+    private javax.swing.JPanel btnConsultarAsociado;
     private javax.swing.JPanel btnRegistrarAsociado;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JDesktopPane pnlPrincipal;
     // End of variables declaration//GEN-END:variables
